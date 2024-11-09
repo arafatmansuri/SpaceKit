@@ -1,0 +1,19 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Define the circular path for the text -->
+  <defs>
+    <path id="circlePath" d="M 100, 100 m -80, 0 a 80,80 0 1,1 160,0 a 80,80 0 1,1 -160,0"/>
+  </defs>
+
+  <!-- Create the arrow in the center -->
+  <g transform="translate(100, 100)">
+    <line x1="0" y1="10" x2="0" y2="-50" stroke="black" stroke-width="4"/>
+    <polygon points="0,-50 -10,-40 10,-40" fill="black"/>
+  </g>
+
+  <!-- Text following the circular path -->
+  <text fill="black" font-family="Arial" font-size="12" letter-spacing="5">
+    <textPath href="#circlePath" startOffset="20%">
+      STAY TUNED     STAY TUNED     STAY TUNED
+    </textPath>
+  </text>
+</svg>
