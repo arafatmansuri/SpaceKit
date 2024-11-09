@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Kit</title>
+    <link rel="stylesheet" href="output.css" />
+    <style>
+      body {
+      }
+      .SeeMoreCont {
+        display: inline;
+        &:hover {
+          .seeMoreArr {
+            /* margin-right: 1px; */
+            color: black;
+          }
+          .seeMore {
+            margin-right: 7px;
+            color: rgb(21, 21, 21);
+            font-weight: 800;
+          }
+        }
+      }
+      .seeMore {
+        transition: all 0.2s ease-in;
+      }
+      .seeMoreArr {
+        transition: all 0.2s ease-in;
+      }
+      .rti {
+        /* transform: rotate(0deg); */
+        animation-name: Rotate360Infinite;
+        animation-duration: 10s;
+        animation-delay: 0ms;
+        animation-iteration-count: infinite;
+        /* animation-direction: normal; */
+        /* animation-fill-mode: forwards; */
+        animation-timing-function: linear;
+      }
+      @keyframes Rotate360Infinite {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* height: 1000px; */
+        gap: 30px;
+        height: 100%;
+      }
+      .gi {
+        transition-property: all;
+        transition-duration: 1s;
+        transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+        transition-delay: 0.1s;
+        cursor: pointer;
+      }
+      .zoomin:hover ~ .gi {
+        transform: scale(1.1);
+      }
+      .sd:hover ~ .gi {
+        transform: scale(1.1);
+      }
+      .sd {
+        transition-property: transform;
+        transition-duration: 1s;
+        transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+        transition-delay: 0.1s;
+        cursor: pointer;
+        color: gray;
+
+        &:last-child {
+          color: black;
+        }
+      }
+      .sd1 {
+        transition-property: margin;
+        transition-duration: 1s;
+        transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+        transition-delay: 0.1s;
+        cursor: pointer;
+        color: gray;
+      }
+      .sd1:hover {
+        /* border: 2px solid black; */
+        color: black;
+        display: inline-block;
+        margin-right: 9px;
+      }
+      #s4-2 div {
+        transition-property: all;
+        transition-duration: 0.7s;
+        transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition-delay: 0ms;
+        cursor: pointer;
+        color: gray;
+      }
+    </style>
+  </head>
+  <body style="background-color: #efefef; width: 100%" class="">
+    <!-- Main -->
+    <main class="w-full">
+      <!-- Section 1 landing -->
+      <section id="s1" class="h-lvh w-full flex flex-col mb-11">
+        <!-- Nav Bar  -->
+        <nav
+          class="flex justify-between bg-opacity-25 ml-5 mr-5 mt-5 py-5 px-12 rounded-2xl sticky top-5 z-10"
+          style="background: #ffffff38; backdrop-filter: blur(15px)"
+        >
+          <img src="/components/Logo.svg" alt="Logo Space Kit" />
+          <ul class="flex justify-center items-center gap-9">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li>
+              <button
+                type="button"
+                class="bg-white p-2 px-7 rounded-md text-sm"
+              >
+                Contact Us
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <div
+          class="h-full border-2 my-0 w-full bg-co flex flex-col items-start justify-end px-12 absolute top-0"
+          style="
+            background: url(/components/Bg-1.jpg);
+            background-position: center;
+            background-size: cover;
+          "
+        >
+          <div
+            class="mb-6 bg-slate-100 px-3 py-2 rounded-full text-sm cursor-pointer"
+          >
+            <span class="font-bold mr-2">More Products</span>
+            <span
+              class="mr-2"
+              style="
+                opacity: 0.5;
+                border: solid black;
+                border-width: thin;
+                height: 1rem;
+              "
+            ></span>
+            <div class="SeeMoreCont">
+              <span class="text-gray-400 font-bold seeMore"> See more </span>
+              <span class="font-bold seeMoreArr">&rightarrow;</span>
+            </div>
+          </div>
+          <div class="flex justify-between items-end w-full mb-16">
+            <h1
+              class="text-7xl font-extralight"
+              style="width: 800px; font-size: 78px"
+            >
+              Your Next Adventure Starts With Us
+            </h1>
+            <img
+              src="/components/stay-tuned.svg"
+              alt=""
+              class="rounded-full rti"
+              style="
+                background: #ffffff38;
+                backdrop-filter: blur(15px);
+                width: 120px;
+                height: 120px;
+              "
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2 -->
+      <section
+        id="s2"
+        class="h-auto w-full flex flex-col gap-6 justify-center items-center py-10"
+        style=""
+      >
+        <div class="uppercase text-center" style="width: 250px">
+          <marquee behavior="" direction="rtl">
+            <ul class="list-disc" style="list-style-type: square">
+              <li class="inline">Designed for your everyday adventures</li>
+              <li class="inline">Designed for your everyday adventures</li>
+              <li class="inline">Designed for your everyday adventures</li>
+            </ul>
+          </marquee>
+        </div>
+        <div class="" style="width: 730px; word-spacing: 10px">
+          <h1
+            class="text-7xl font-normal text-center"
+            style="font-size: 50px; line-height: 1.3"
+          >
+            Explore our curated collection of high-quality products
+          </h1>
+        </div>
+        <div style="width: 500px" class="text-center text-gray-700">
+          <p>
+            Whether you're looking for a stylish new bag, a captivating book, or
+            a perfect mug for your morning brew, we've got you covered.
+          </p>
+        </div>
+        <!-- Grids images -->
+        <div
+          class="grid grid-cols-3 gap-4 justify-center items-center w-full px-12 my-14"
+        >
+          <div
+            class="rounded-md border border-gray-300 overflow-hidden"
+            style="height: 270px"
+          >
+            <img
+              src="/components/Part-2 i1.jpg"
+              alt=""
+              style="
+                overflow-clip-margin: content-box;
+                overflow: clip;
+                object-fit: cover;
+                width: 100%;
+                max-width: 100%;
+                height: 100%;
+                vertical-align: middle;
+              "
+              class="hover:scale-110 gi"
+            />
+          </div>
+          <div
+            class="col-span-2 rounded-md border border-gray-300 overflow-hidden text-center relative"
+            style="height: 270px"
+          >
+            <h3
+              class="absolute top-6 z-10 mx-10 mt-4 cursor-pointer select-none text-left leading-snug zoomin"
+              style="font-size: 38px; font-weight: 400"
+            >
+              Lightweight, durable, and perfect for any journey with our premium
+              kits
+            </h3>
+            <div
+              class="absolute z-10 bottom-6 sd cursor-pointer select-none text-center mx-10"
+            >
+              <span class="sd1">See Details</span>
+              <span class="text-black">&rightarrow;</span>
+            </div>
+            <img
+              src="/components/Part-2 i2.jpg"
+              alt=""
+              style="
+                overflow-clip-margin: content-box;
+                overflow: clip;
+                object-fit: cover;
+                width: 100%;
+                max-width: 100%;
+                height: 100%;
+                vertical-align: middle;
+              "
+              class="hover:scale-110 gi"
+            />
+          </div>
+          <div
+            class="col-span-2 rounded-md border border-gray-300 overflow-hidden relative"
+            style="height: 270px"
+          >
+            <h3
+              class="absolute top-6 z-10 mx-10 mt-4 cursor-pointer select-none text-left leading-snug zoomin"
+              style="font-size: 38px; font-weight: 400; width: 65%"
+            >
+              Tools to stay organized and on top of your goals every day.
+            </h3>
+            <div
+              class="absolute z-10 bottom-7 sd cursor-pointer select-none text-center mx-10"
+            >
+              <span class="sd1">Plan Ahead</span>
+              <span class="text-black">&rightarrow;</span>
+            </div>
+            <img
+              src="/components/Part-2 i3.jpg"
+              alt=""
+              style="
+                overflow-clip-margin: content-box;
+                overflow: clip;
+                object-position: center;
+                object-fit: cover;
+                width: 100%;
+                max-width: 100%;
+                height: 100%;
+                vertical-align: middle;
+              "
+              class="hover:scale-110 gi"
+            />
+          </div>
+          <div
+            class="rounded-md border border-gray-300 overflow-hidden relative flex justify-center items-center flex-col"
+            style="height: 270px"
+          >
+            <div
+              class="absolute sd z-20"
+              style="background: #272727e6; height: 100%; width: 100%"
+            ></div>
+            <img
+              src="/components/Part-2 i4.jpg"
+              alt=""
+              style="
+                overflow-clip-margin: content-box;
+                overflow: clip;
+                object-fit: cover;
+                width: 100%;
+                max-width: 100%;
+                height: 100%;
+              "
+              class="hover:scale-110 gi z-10"
+            />
+            <div
+              class="absolute top-0 flex justify-center items-center sd"
+              style="width: 100%; max-width: 100%; height: 100%"
+            >
+              <button
+                type="button"
+                class="absolute text-center bg-white z-20 sd hover:shadow-md hover:shadow-orange-400"
+                style="width: 50%; height: 60px"
+              >
+                <span class="uppercase sd1" style="color: black"
+                  >learn more</span
+                ><span class="text-black">&rightarrow;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="s3"
+        class="h-auto w-full flex flex-col justify-between items-center px-12 gap-10"
+      >
+        <div id="s3-1" class="flex justify-between items-center w-full">
+          <div id="s3-1-1" class="flex flex-col gap-2">
+            <div id="s3-1-1-1" class="uppercase text-2xl font-medium">
+              <span class="text-3xl">&Cross;</span> our products
+            </div>
+            <div id="s3-1-1-2" class="text-xl text-gray-500">
+              All collection
+            </div>
+          </div>
+          <div
+            id="s3-1-2"
+            class="uppercase bg-black text-white px-9 py-4 rounded-md cursor-pointer"
+          >
+            shop now
+          </div>
+        </div>
+        <div
+          id="s3-2"
+          class="grid grid-cols-3 justify-between items-center w-full h-auto gap-5"
+        >
+          <div id="s3-2-1" class="flex flex-col justify-around gap-0 w-full">
+            <div
+              id="s3-2-1-1"
+              class="border-2 bg-black mb-0 overflow-hidden rounded-sm"
+              style="height: 300px"
+            >
+              <img
+                src="/components/part-4 i1.jpg"
+                alt=""
+                style="
+                  overflow-clip-margin: content-box;
+                  overflow: clip;
+                  object-fit: cover;
+                  width: 100%;
+                  max-width: 100%;
+                  height: 100%;
+                  vertical-align: middle;
+                "
+                class="hover:scale-110 gi"
+              />
+            </div>
+            <div
+              id="s3-2-1-2"
+              class="h-20 bg-white mt-0 flex justify-between items-center px-5"
+            >
+              <div id="s3-2-1-2-1">
+                <div class="uppercase text-sm font-semibold">explorer bag</div>
+                <div class="uppercase text-gray-700 text-sm">white/black</div>
+              </div>
+              <div id="s3-2-1-2-2" class="text-black font-medium">$26</div>
+            </div>
+          </div>
+          <div id="s3-2-2" class="flex flex-col justify-around gap-0 w-full">
+            <div
+              id="s3-2-1-1"
+              class="border-2 bg-black mb-0 overflow-hidden rounded-sm"
+              style="height: 300px"
+            >
+              <img
+                src="/components/part-4 i2.jpg"
+                alt=""
+                style="
+                  overflow-clip-margin: content-box;
+                  overflow: clip;
+                  object-fit: cover;
+                  width: 100%;
+                  max-width: 100%;
+                  height: 100%;
+                  vertical-align: middle;
+                "
+                class="hover:scale-110 gi"
+              />
+            </div>
+            <div
+              id="s3-2-1-2"
+              class="h-20 bg-white mt-0 flex justify-between items-center px-5"
+            >
+              <div id="s3-2-1-2-1">
+                <div class="uppercase text-sm font-semibold">
+                  Journey Within Book
+                </div>
+                <div class="uppercase text-gray-700 text-sm">white/orange</div>
+              </div>
+              <div id="s3-2-1-2-2" class="text-black font-medium">$12</div>
+            </div>
+          </div>
+          <div id="s3-2-3" class="flex flex-col justify-around gap-0 w-full">
+            <div
+              id="s3-2-1-1"
+              class="border-2 bg-black mb-0 overflow-hidden rounded-sm"
+              style="height: 300px"
+            >
+              <img
+                src="/components/part-4 i3.jpg"
+                alt=""
+                style="
+                  overflow-clip-margin: content-box;
+                  overflow: clip;
+                  object-fit: cover;
+                  width: 100%;
+                  max-width: 100%;
+                  height: 100%;
+                  vertical-align: middle;
+                "
+                class="hover:scale-110 gi"
+              />
+            </div>
+            <div
+              id="s3-2-1-3"
+              class="h-20 bg-white mt-0 flex justify-between items-center px-5"
+            >
+              <div id="s3-2-1-2-1">
+                <div class="uppercase text-sm font-semibold">
+                  Morning Brew Mug
+                </div>
+                <div class="uppercase text-gray-700 text-sm">white/orange</div>
+              </div>
+              <div id="s3-2-1-2-2" class="text-black font-medium">$32</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="s4"
+        class="flex flex-col justify-between items-center w-full h-auto my-16 gap-10"
+      >
+        <div
+          id="s4-1"
+          class="text-5xl text-center leading-snug"
+          style="width: 50%"
+        >
+          Frequently asked questions
+        </div>
+        <div id="s4-2" class="flex flex-col w-full px-10 gap-2">
+          <div class="flex justify-between rounded-md py-6 px-6 hover:bg-white">
+            <span class="text-black">What's the quality of your products?</span
+            ><img src="/components/downArr.svg" alt="" class="" />
+          </div>
+          <div class="flex justify-between rounded-md py-6 px-6 hover:bg-white">
+            <span class="text-black">Do you offer returns?</span
+            ><img src="/components/downArr.svg" alt="" class="" />
+          </div>
+          <div class="flex justify-between rounded-md py-6 px-6 hover:bg-white">
+            <span class="text-black">Do you ship internationally?</span
+            ><img src="/components/downArr.svg" alt="" class="" />
+          </div>
+          <div class="flex justify-between rounded-md py-6 px-6 hover:bg-white">
+            <span class="text-black"
+              >How long will my order take to arrive?</span
+            ><img src="/components/downArr.svg" alt="" class="" />
+          </div>
+          <div class="flex justify-between rounded-md py-6 px-6 hover:bg-white">
+            <span class="text-black"
+              >Are your products environmentally friendly?</span
+            ><img src="/components/downArr.svg" alt="" class="" />
+          </div>
+        </div>
+      </section>
+      <footer
+        class="flex flex-col justify-between items-center h-auto gap-20 my-16"
+      >
+        <img src="/components/FooterLogo.svg" alt="" class="w-44" />
+        <div
+          class="grid grid-cols-4 justify-between items-center gap-y-5 gap-x-16"
+        >
+          <div class="text-2xl font-normal text-center">Explore</div>
+          <div class="text-2xl font-normal text-center">Support</div>
+          <div class="text-2xl font-normal text-center">Others</div>
+          <div class="text-2xl font-normal text-center">Utility</div>
+          <div
+            class="text-center text-gray-500 cursor-pointer hover:text-black hover:-translate-y-1 transition-all"
+          >
+            Home
+          </div>
+          <div
+            class="text-center text-gray-500 cursor-pointer hover:text-black hover:-translate-y-1 transition-all"
+          >
+            FAQ
+          </div>
+          <div
+            class="text-center text-gray-500 cursor-pointer hover:text-black hover:-translate-y-1 transition-all"
+          >
+            Style Guide
+          </div>
+          <div
+            class="text-center text-gray-500 cursor-pointer hover:text-black hover:-translate-y-1 transition-all"
+          >
+            Instruction
+          </div>
+          <div
+            class="text-center text-gray-500 cursor-pointer hover:text-black hover:-translate-y-1 transition-all"
+          >
+            Products
+          </div>
+          <div
+            class="text-center text-gray-500 cursor-pointer hover:text-black hover:-translate-y-1 transition-all"
+          >
+            Contact
+          </div>
+          <div
+            class="text-center text-gray-500 cursor-pointer hover:text-black hover:-translate-y-1 transition-all"
+          >
+            Changelog
+          </div>
+          <div
+            class="text-center text-gray-500 cursor-pointer hover:text-black hover:-translate-y-1 transition-all"
+          >
+            License
+          </div>
+        </div>
+        <div class="flex gap-14">
+          <img
+            src="/components/TwitterLogo.svg"
+            alt=""
+            class="hover:bg-orange-500 rounded-full p-4 hover:-translate-y-1 transition-all"
+          />
+          <img
+            src="/components/FaceBookLogo.svg"
+            alt=""
+            class="hover:bg-orange-500 rounded-full p-4 px-5 hover:-translate-y-1 transition-all"
+          />
+          <img
+            src="/components/InstagramLogo.svg"
+            alt=""
+            class="hover:bg-orange-500 rounded-full px-4 hover:-translate-y-1 transition-all"
+          />
+          <img
+            src="/components/GithubLogo.svg"
+            alt=""
+            class="hover:bg-orange-500 rounded-full p-4 hover:-translate-y-1 transition-all"
+          />
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
