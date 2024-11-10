@@ -112,18 +112,22 @@
       <section id="s1" class="h-lvh w-full flex flex-col mb-11">
         <!-- Nav Bar  -->
         <nav
-          class="flex justify-between bg-opacity-25 ml-5 mr-5 mt-5 py-5 px-12 rounded-2xl sticky top-5 z-10"
+          class="flex justify-between bg-opacity-25 ml-5 mr-5 mt-5 py-7 px-12 rounded-2xl sticky top-5 z-10 box-border h-[90px]"
           style="background: #ffffff38; backdrop-filter: blur(15px)"
         >
           <img src="/components/Logo.svg" alt="Logo Space Kit" />
           <ul class="flex justify-center items-center gap-9">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">FAQ</a></li>
+            <li>
+              <a href="#" class="hover:opacity-15 transition-all">Home</a>
+            </li>
+            <li>
+              <a href="#" class="hover:opacity-15 transition-all">Products</a>
+            </li>
+            <li><a href="#" class="hover:opacity-15 transition-all">FAQ</a></li>
             <li>
               <button
                 type="button"
-                class="bg-white p-2 px-7 rounded-md text-sm"
+                class="bg-white py-3 px-7 rounded-md text-sm border-b border-b-[#e28e2a] hover:border-b-4 hover:-translate-y-0"
               >
                 Contact Us
               </button>
@@ -320,7 +324,7 @@
             >
               <button
                 type="button"
-                class="absolute text-center bg-white z-20 sd hover:shadow-md hover:shadow-orange-400"
+                class="absolute text-center bg-white z-20 sd invisible group-hover:visible hover:shadow-md hover:shadow-orange-500"
                 style="width: 50%; height: 60px"
               >
                 <span class="uppercase sd1" style="color: black"
@@ -347,7 +351,7 @@
           </div>
           <div
             id="s3-1-2"
-            class="uppercase bg-black text-white px-9 py-4 rounded-md cursor-pointer"
+            class="uppercase bg-black text-white px-9 py-4 rounded-md cursor-pointer hover:-translate-y-1 transition-transform"
           >
             shop now
           </div>
