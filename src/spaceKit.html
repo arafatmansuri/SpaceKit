@@ -103,6 +103,25 @@
         cursor: pointer;
         color: gray;
       }
+      @keyframes appear {
+        from {
+          opacity: 0;
+          /* scale: 0.5; */
+          transform: translateX(-100px);
+          /* clip-path: inset(100% 100% 0% 0); */
+        }
+        to {
+          opacity: 1;
+          /* scale: 1; */
+          transform: translateX(0px);
+          /* clip-path: inset(0 0 0 0); */
+        }
+      }
+      .blk {
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+      }
     </style>
   </head>
   <body style="background-color: #efefef; width: 100%" class="">
@@ -185,7 +204,6 @@
       <section
         id="s2"
         class="h-auto w-full flex flex-col gap-6 justify-center items-center py-10"
-        style=""
       >
         <div class="uppercase text-center" style="width: 250px">
           <marquee behavior="" direction="rtl">
@@ -212,7 +230,7 @@
         </div>
         <!-- Grids images -->
         <div
-          class="grid grid-cols-3 gap-4 justify-center items-center w-full px-12 my-14"
+          class="grid grid-cols-3 gap-4 justify-center items-center w-full px-12 my-14 blk"
         >
           <div
             class="rounded-md border border-gray-300 overflow-hidden"
@@ -358,7 +376,7 @@
         </div>
         <div
           id="s3-2"
-          class="grid grid-cols-3 justify-between items-center w-full h-auto gap-5"
+          class="grid grid-cols-3 justify-between items-center w-full h-auto gap-5 blk"
         >
           <div
             id="s3-2-1"
