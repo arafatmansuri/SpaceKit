@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-export const content = ["./src/**/*.{html,js}"];
+export const content = ["./spaceKit.html"];
 export const theme = {
   extend: {},
 };
